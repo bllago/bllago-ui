@@ -1,26 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Bllago from './components/Bllago'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Bllago
+          component="button"
+          color="primary"
+          variant="contained"
+          size="md"
+          shape="rectangle">
+          My button
+        </Bllago>
+        <Bllago
+          component="button"
+          color="primary"
+          variant="outlined"
+          size="md"
+          shape="rectangle">
+          My button
+        </Bllago>
+        <Bllago
+          component="button"
+          color="primary"
+          variant="text"
+          size="md"
+          shape="rectangle">
+          My button
+        </Bllago>
+      </div>
+      <div>
+        <Bllago
+          component="button"
+          color="primary"
+          variant="contained"
+          size="sm"
+          shape="rectangle">
+          My button
+        </Bllago>
+        <Bllago
+          component="button"
+          color="primary"
+          variant="contained"
+          size="md"
+          shape="rectangle">
+          My button
+        </Bllago>
+        <Bllago
+          component="button"
+          color="primary"
+          variant="contained"
+          size="lg"
+          shape="rectangle">
+          My button
+        </Bllago>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
